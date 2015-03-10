@@ -1,6 +1,7 @@
-require 'pry'
+require 'rubygems'
+require 'bundler/setup'
+Bundler.require(:default)
 
-require 'sqlite3'
 #all caps = constant, variables that can't be changed accidentally
 DATABASE = SQLite3::Database.new("test_database.db")
 #use for new OR existing databases
